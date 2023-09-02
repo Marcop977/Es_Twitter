@@ -8,7 +8,7 @@ const demo = document.querySelector("#demo");
 
 form.addEventListener("submit", function(){
     controllaCampi();
-    verificaUtente()
+    verificaUtente();
 });
 
 function controllaCampi(){
@@ -46,11 +46,7 @@ function Utente(username, password){
     this.password = password;
 }
 
-const arrUtenti = [
-    // new Utente("Mariorossi", "Mario123?"),
-    // new Utente("Lucaverdi", "Luca123?"),
-    // new Utente("Laurabianchi", "Laura123?")
-];
+const arrUtenti = [];
 
 function verificaUtente(){   
     const esiste = arrUtenti.find(u => u.username === username.value);
